@@ -1,0 +1,71 @@
+@charset "ISO-8859-1";
+body {
+	align-items:center;
+	background-color:#AEFD6C;
+	font-family:'Arial', sans-serif;
+	justify-content:center;
+	height:100vh;
+	margin:0;
+	background-color: "#aefd6c";
+	background-image: url("backg1.png");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	
+}
+.container {
+	width: 600px;
+	padding:20px;
+	border-radius:10px;
+	box-shadow:0 0 10px rgba(0,0,1,0.5);
+	background-color: white;
+	text-align: center;
+}
+ul li {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.container, input {
+	outline: none;
+	border:none;
+}
+
+ul {
+  padding-left: 0;   /* Removes default padding */
+  margin-left: 20px; /* Adjusts list alignment */
+  list-style-position: inside; /* Ensures bullet points align properly */
+}
+
+li {
+  text-align: start; /* Aligns text based on language direction */
+}
+
+
+h1 {
+	font-weight: bold;
+	color: #007bff;
+	
+}
+
+p { 
+	margin: 20px 0;
+	line-height: 1.6;
+}
+.links a {
+	margin: 0 10px;
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+	
+	
+	transition:colo 0.3s ease;
+}
+.links a:hover {
+	color: #0056b3;
+	/*font-size: 20px;
+	text-transform: uppercase;*/
+}
+
