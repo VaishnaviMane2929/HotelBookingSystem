@@ -16,6 +16,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     
     <style>
         /* Navbar Styling */
@@ -247,69 +248,195 @@ hr {
 </c:choose>
 
 
-<%-- room search Section start --%>
-<div class="container my-5">
-  <div class="row g-5">
-    
-    <!-- Left: Room Info -->
-   <div class="col-md-7 text-center text-md-20px">
-      <h1 class="fw-bold" style="font-size: larger;">Comfort Triple Room</h1>
-      <p class="text-muted fs-5">Perfectly suitable for family vacation or for big companies.</p>
-      <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/classic-double-room-992x992.jpg" alt="Comfort Triple Room" class="img-fluid rounded mx-auto d-block d-md-inline" style="max-width: 900px; height: 50%;">
-    </div>
+<div class="container my-5" style="margin-left: 50px">
+    <div class="row">
+      <!-- Room Information -->
+      <div class="col-md-7 " >
+        <h1 style="font-size: larger;">Standard Single Room</h1>
+        <p class="text-muted">
+          Standard Single Rooms are designed in open-concept living area and have many facilities.
+        </p>
 
-    <!-- Right: Price & Booking -->
-    <div class="col-md-5">
-      <div class="price-box shadow-sm">
-        <p class="text-muted mb-1">Prices start at:</p>
-        <h2 class="fw-bold">$716 <span class="fs-5 text-muted">/ for 4 nights</span></h2>
-
-        <div class="my-3">
-          <select class="form-select" aria-label="Select number of rooms">
-            <option selected>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
+        <!-- Image Carousel -->
+        <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/standart-single-room-992x992.jpg" class="d-block w-75 rounded" alt="Room Image">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
         </div>
-
-        <p class="text-muted mb-4">of 5 accommodations available.</p>
-
-        <button class="btn btn-book w-100">BOOK</button>
       </div>
+
+      <!-- Booking Section -->
+      <div class="col-md-5" style="margin-top: 30px">
+        <div class="p-4 border rounded bg-light">
+          <p class="mb-1 text-muted">Prices start at:</p>
+          <h3 class="fw-bold">$357 <small class="fs-6 text-muted">/ for 3 nights</small></h3>
+
+<label for="accommodationCount" class="form-label mt-3">Select quantity:</label>
+    <select class="form-select" id="accommodationCount">
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+
+    <p class="mt-2 text-muted">of 5 accommodations available.</p>
+
+    <button class="btn btn-warning w-100 mt-3"><a href="rooms.jsp">BOOK</a></button>
+
+    <!-- Feature List -->
+    <div class="row text-muted mt-4">
+      <div class="col-6">
+        <p><i class="bi bi-person"></i> 2</p>
+        <p><i class="bi bi-eye"></i> beach</p>
+        <p><i class="bi bi-aspect-ratio"></i> 20m²</p>
+        <p><i class="bi bi-bed"></i> queen bed</p>
+      </div>
+      <div class="col-6">
+        <p><i class="bi bi-bookmark-fill text-warning"></i> single</p>
+        <p><i class="bi bi-star-fill text-warning"></i> air-conditioning,<br>free wi-fi, hairdryer,<br>in-room safety,<br>laundry, minibar,<br>telephone</p>
+      </div>
+    </div>
+  </div>
+</div>
       
-      <div class="container my-4">
-  <div class="row row-cols-1 row-cols-md-2 g-4 text-muted fs-6">
+    </div>
+  </div>
+  <div class="container my-5" style="margin-left: 50px">
+    <div class="row">
+      <!-- Room Information -->
+      <div class="col-md-7 " >
+        <h1 style="font-size: larger;">Classic Double Room</h1>
+        <p class="text-muted">
+          Have lots of in-room facilities and are designed in open-concept living area.
+        </p>
 
-    <div class="col d-flex align-items-center">
-      <i class="fas fa-user me-2 text-warning"></i> 3
-    </div>
+        <!-- Image Carousel -->
+        <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/single-room-2-2-992x992.jpg" class="d-block w-75 rounded" alt="Room Image">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
 
-    <div class="col d-flex align-items-center">
-      <i class="fas fa-bookmark me-2 text-warning"></i> Triple
-    </div>
+      <!-- Booking Section -->
+      <div class="col-md-5" style="margin-top: 30px">
+        <div class="p-4 border rounded bg-light">
+          <p class="mb-1 text-muted">Prices start at:</p>
+          <h3 class="fw-bold">$477 <small class="fs-6 text-muted">/ for 3 nights</small></h3>
 
-    <div class="col d-flex align-items-center">
-      <i class="fas fa-eye me-2 text-warning"></i>ocean, beach
-    </div>
+<label for="accommodationCount" class="form-label mt-3">Select quantity:</label>
+    <select class="form-select" id="accommodationCount">
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
 
-    <div class="col d-flex align-items-center">
-      <i class="fas fa-star me-2 text-warning"></i>
-      air-conditioning, free wi-fi, hairdryer,<br>
-      in-room safety, laundry, minibar, telephone
-    </div>
+    <p class="mt-2 text-muted">of 5 accommodations available.</p>
 
-    <div class="col d-flex align-items-center">
-      <i class="fas fa-expand me-2 text-warning"></i> 25m²
+    <button class="btn btn-warning w-100 mt-3"><a href="rooms.jsp">BOOK</a></button>
+
+    <!-- Feature List -->
+    <div class="row text-muted mt-4">
+      <div class="col-6">
+        <p><i class="bi bi-person"></i> 2</p>
+        <p><i class="bi bi-eye"></i> beach</p>
+        <p><i class="bi bi-aspect-ratio"></i> 25m²</p>
+        <p><i class="bi bi-bed"></i> queen bed</p>
+      </div>
+      <div class="col-6">
+        <p><i class="bi bi-bookmark-fill text-warning"></i> double</p>
+        <p><i class="bi bi-star-fill text-warning"></i> air-conditioning,<br>free wi-fi, hairdryer,<br>in-room safety,<br>laundry, minibar,<br>telephone</p>
+      </div>
     </div>
-<div class="col d-flex align-items-center">
-      <i class="fas fa-bed me-2 text-warning"></i> queen bed
-    </div>
+  </div>
 </div>
-</div>
+      
     </div>
+  </div>
+  
+  <div class="container my-5" style="margin-left: 50px">
+    <div class="row">
+      <!-- Room Information -->
+      <div class="col-md-7 " >
+        <h1 style="font-size: larger;">Comfort Triple Room</h1>
+        <p class="text-muted">
+         Perfectly suitable for family vacation or for big companies.
+        </p>
+
+        <!-- Image Carousel -->
+        <div id="roomCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/classic-double-room-992x992.jpg" class="d-block w-75 rounded" alt="Room Image">
+            </div>
+            <!-- Add more carousel items as needed -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#roomCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#roomCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Booking Section -->
+      <div class="col-md-5" style="margin-top: 30px">
+        <div class="p-4 border rounded bg-light">
+          <p class="mb-1 text-muted">Prices start at:</p>
+          <h3 class="fw-bold">$537 <small class="fs-6 text-muted">/ for 3 nights</small></h3>
+
+<label for="accommodationCount" class="form-label mt-3">Select quantity:</label>
+    <select class="form-select" id="accommodationCount">
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+
+    <p class="mt-2 text-muted">of 5 accommodations available.</p>
+
+    <button class="btn btn-warning w-100 mt-3"><a href="rooms.jsp">BOOK</a></button>
+
+    <!-- Feature List -->
+    <div class="row text-muted mt-4">
+      <div class="col-6">
+        <p><i class="bi bi-person"></i> 3</p>
+        <p><i class="bi bi-eye"></i> ocean, beach</p>
+        <p><i class="bi bi-aspect-ratio"></i> 40m²</p>
+        <p><i class="bi bi-bed"></i> queen bed, sofa bed</p>
+      </div>
+      <div class="col-6">
+        <p><i class="bi bi-bookmark-fill text-warning"></i> triple</p>
+        <p><i class="bi bi-star-fill text-warning"></i> air-conditioning,<br>free wi-fi, hairdryer,<br>in-room safety,<br>laundry, minibar,<br>telephone</p>
+      </div>
+    </div>
+  </div>
 </div>
+      
+    </div>
   </div>
 
 <%-- room search Section end --%>

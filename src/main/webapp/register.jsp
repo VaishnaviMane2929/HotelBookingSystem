@@ -78,7 +78,7 @@
         color: #ff7e5f;
     }
 
-    a {
+    a {signUpsignUp
         text-decoration: none;
         color: #ff7e5f;
         font-weight: bold;
