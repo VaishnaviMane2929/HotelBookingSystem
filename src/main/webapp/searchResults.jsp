@@ -184,68 +184,71 @@ hr {
     </nav>
 
 
- <div class="text-center mt-20">
-    <!-- Star Design -->
-    <div class="flex justify-center space-x-3 mb-2 text-[#c9ab6f]">
-      <span class="text-xs">★</span>
-      <span class="text-sm">★</span>
-      <span class="text-base">★</span>
-      <span class="text-sm">★</span>
-      <span class="text-xs">★</span>
-    </div>
-
-    <!-- Heading -->
-    <h1 class="text-3xl md:text-4xl font-serif font-semibold text-gray-800">
-      Search Results
-    </h1>
+ <div class="text-center mt-10 sm:mt-16 md:mt-20 px-4 sm:px-6 lg:px-8">
+  <!-- Star Design -->
+  <div class="flex justify-center space-x-1 sm:space-x-2 md:space-x-3 mb-2 text-[#c9ab6f]">
+    <span class="text-[10px] sm:text-xs">★</span>
+    <span class="text-xs sm:text-sm">★</span>
+    <span class="text-sm sm:text-base">★</span>
+    <span class="text-xs sm:text-sm">★</span>
+    <span class="text-[10px] sm:text-xs">★</span>
   </div>
 
+  <!-- Heading -->
+  <h1 class="text-2xl sm:text-3xl md:text-4xl font-serif font-semibold text-gray-800">
+    Search Results
+  </h1>
+</div>
 
- <c:choose>
-    <c:when test="${not empty results}">
 
-        <%-- Summary Message --%>
-        <c:set var="firstCheckIn" value="${results[0].check_in}" />
-        <c:set var="lastCheckOut" value="${results[fn:length(results) - 1].check_out}" />
 
-        <p class="text-center fw-semibold text-primary my-3">
-            🔎 ${fn:length(results)} accommodations found from 
-            <fmt:formatDate value="${record.check_in}" /> – 
-            till 
-            <fmt:formatDate value="${record.check_out}"  />
-        </p>
+  <div class="container my-5">
+        <c:choose>
+            <c:when test="${not empty results}">
 
-        <%-- Results Table --%>
-        <table class="table table-bordered text-center align-middle">
-            <thead class="table-light">
-                <tr>
-                    <th>Check-in Date</th>
-                    <th>Check-out Date</th>
-                    <th>Adults</th>
-                    <th>Children</th>
-                </tr>
-            </thead>
-            <tbody>
-                <c:forEach var="record" items="${results}">
-                    <tr>
-                        <td>   ${record.check_in}</td>
-                        <td>${record.check_out}</td>
-                        <td>${record.adult}</td>
-                        <td>${record.children}</td>
-                    </tr>
-                </c:forEach>
-            </tbody>
-        </table>
+                <!-- Summary Message -->
+                <c:set var="firstCheckIn" value="${results[0].check_in}" />
+                <c:set var="lastCheckOut" value="${results[fn:length(results) - 1].check_out}" />
 
-    </c:when>
-    <c:otherwise>
-        <tr>
-            <td colspan="4" class="text-center text-muted fw-semibold py-3 bg-light">
-                No search results found.
-            </td>
-        </tr>
-    </c:otherwise>
-</c:choose>
+                <p class="text-center fw-semibold text-primary my-3 px-2">
+                    🔎 ${fn:length(results)} accommodations found from 
+                    <fmt:formatDate value="${record.check_in}" /> – 
+                    till 
+                    <fmt:formatDate value="${record.check_out}" />
+                </p>
+
+                <!-- Responsive Table -->
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Check-in Date</th>
+                                <th>Check-out Date</th>
+                                <th>Adults</th>
+                                <th>Children</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach var="record" items="${results}">
+                                <tr>
+                                    <td>${record.check_in}</td>
+                                    <td>${record.check_out}</td>
+                                    <td>${record.adult}</td>
+                                    <td>${record.children}</td>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+
+            </c:when>
+            <c:otherwise>
+                <div class="text-center text-muted fw-semibold py-3 bg-light rounded">
+                    No search results found.
+                </div>
+            </c:otherwise>
+        </c:choose>
+    </div>
 
 
 <div class="container my-5" style="margin-left: 50px">
@@ -502,6 +505,7 @@ hr {
 </footer>
 <%-- End Footer Section --%>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
