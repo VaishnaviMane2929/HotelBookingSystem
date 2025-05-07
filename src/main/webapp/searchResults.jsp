@@ -211,7 +211,7 @@
     </div>
 
     <!-- Booking Section -->
-    <div class="col-lg-5 col-md-12">
+    <div class="col-lg-5 col-md-12" style="margin-top: 125px">
       <div class="p-4 border rounded bg-light shadow-sm">
         <p class="mb-1 text-muted">Prices start at:</p>
         <h3 class="fw-bold">$357 <small class="fs-6 text-muted">/ for 3 nights</small></h3>
@@ -272,7 +272,7 @@
       <div id="roomCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/standart-single-room-992x992.jpg"
+            <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/superior-double-room-992x992.jpg"
               class="d-block w-100 rounded" alt="Room Image">
           </div>
           <!-- Add more carousel-item blocks if needed -->
@@ -287,7 +287,7 @@
     </div>
 
     <!-- Booking Section -->
-    <div class="col-lg-5 col-md-12">
+    <div class="col-lg-5 col-md-12" style="margin-top: 125px">
       <div class="p-4 border rounded bg-light shadow-sm">
         <p class="mb-1 text-muted">Prices start at:</p>
         <h3 class="fw-bold">$477 <small class="fs-6 text-muted">/ for 3 nights</small></h3>
@@ -338,16 +338,16 @@
   <div class="row g-4 align-items-start">
     <!-- Room Information -->
     <div class="col-lg-7 col-md-12">
-      <h2 class="fw-bold">Classic Double Room</h2>
+      <h2 class="fw-bold">Comfort Triple Room</h2>
       <p class="text-muted">
-     Have lots of in-room facilities and are designed in open-concept living area.
+    Perfectly suitable for family vacation or for big companies.
       </p>
 
       <!-- Image Carousel -->
       <div id="roomCarousel" class="carousel slide rounded shadow-sm" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/standart-single-room-992x992.jpg"
+            <img src="https://themes.getmotopress.com/luviana/wp-content/uploads/sites/27/2019/06/classic-double-room-992x992.jpg"
               class="d-block w-100 rounded" alt="Room Image">
           </div>
           <!-- Add more carousel-item blocks if needed -->
@@ -362,7 +362,7 @@
     </div>
 
     <!-- Booking Section -->
-    <div class="col-lg-5 col-md-12">
+    <div class="col-lg-5 col-md-12" style="margin-top: 125px">
       <div class="p-4 border rounded bg-light shadow-sm">
         <p class="mb-1 text-muted">Prices start at:</p>
         <h3 class="fw-bold">$537 <small class="fs-6 text-muted">/ for 3 nights</small></h3>

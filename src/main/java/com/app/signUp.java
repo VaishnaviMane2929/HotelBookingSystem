@@ -59,9 +59,9 @@ public class signUp extends HttpServlet {
 				System.out.println("your account Already exist..!");
 				
 				request.setAttribute("msg", "your account Already exist..!");
-				RequestDispatcher rd= request.getRequestDispatcher("SignUp.jsp");
+				RequestDispatcher rd= request.getRequestDispatcher("contact.jsp");
 				rd.forward(request, response);
-//				response.sendRedirect("SignUp.jsp");
+//				response.sendRedirect("contact.jsp");
 				
 			}else {
 				String Query="insert into user(username,ugmail,upassword,uphoto,role) values(?,?,?,?,?)";

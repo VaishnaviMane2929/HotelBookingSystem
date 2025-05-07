@@ -49,7 +49,7 @@ public class searchData extends HttpServlet {
             pst.setString(1, check_in);
             pst.setString(2, check_out);
             pst.setString(3, adult);
-            pst.setString(4, children);
+            pst.setString(4, children); 
 
             int rowsInserted = pst.executeUpdate();
 
