@@ -63,7 +63,7 @@
         <textarea name="description" class="form-control" rows="3" placeholder="Room features, view, etc."></textarea>
       </div>
 
-      <button type="submit" class="btn btn-primary w-100"> Confirm Reservation</button>
+      <button type="submit" class="btn btn-primary w-100"><a href="roomsConfirm.jsp"> Confirm Reservation</a></button>
     </form>
   </div>
 </div>
