@@ -6,8 +6,6 @@ import java.util.Properties;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-import com.mysql.cj.Session;
-
 
 import com.mysql.cj.Session;
 
@@ -16,7 +14,7 @@ public class SendEmailServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        String toEmail = request.getParameter("gmail");
+        String toEmail = request.sgetParameter("gmail");
         String fullName = request.getParameter("fullName");
 
         String fromEmail = "yourgmail@gmail.com"; // your Gmail
