@@ -59,7 +59,7 @@
             </div>
 
             <div class="d-grid">
-                <button type="submit" class="btn btn-success">Confirm Booking</button>
+                <button type="submit" class="btn btn-success"><a href="success.jsp">Confirm Booking</a></button>
             </div>
         </form>
     </div>
